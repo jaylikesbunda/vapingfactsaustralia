@@ -170,6 +170,62 @@ p, li {
     font-size: 1.1em;
     line-height: 1.6;
 }
+/* Popup ad styling */
+.popup {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 250px; /* Adjust width as needed */
+    border: 2px solid #000;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none; /* Initially hidden */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.popup.show {
+    display: block;
+    opacity: 1;
+}
+
+.popup img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.popup .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    pointer-events: none; /* Initially disable button */
+    opacity: 0.0; /* Make button semi-transparent */
+}
+
+.popup .close-btn.enabled {
+    pointer-events: auto; /* Enable button */
+    opacity: 1; /* Make button fully opaque */
+}
+
+@media screen and (max-width: 600px) {
+    .popup {
+        width: 80%; /* Adjust width for mobile view */
+        right: 10%;
+    }
+}
 
 /* Accordion Styles */
 .accordion {
