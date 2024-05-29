@@ -43,3 +43,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const observer = new IntersectionObserver(observerCallback, observerOptions);
   observer.observe(toolSection);
 });
+
+document.getElementById('mp-select').addEventListener('change', function() {
+	var email = this.value;
+	var emailButton = document.getElementById('email-button');
+	emailButton.href = 'mailto:' + email + '?subject=Important%20Issue&body=Dear%20Local%20Member%20of%20Parliament,%0A%0AI%20would%20like%20to%20discuss%20the%20following%20issue%20with%20you:%0A%0A';
+	emailButton.style.display = 'inline-block';
+});
