@@ -140,43 +140,42 @@
 
 	</section>
 
+        <section id="comparison-tool">
+            <main class="comparison-tool">
+                <section class="toggle-section">
+                    <div class="switch-container">
+						<h3 id="siwtch-vaping-title">Toggle to Compare</h3>
+                        <label class="switch">
+                            <input type="checkbox" id="comparison-toggle" onchange="updateComparison(this.checked)">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="comparison-box" id="smoking-vaping-box">
+                        <i id="smoking-vaping-icon" class="fas fa-smoking"></i>
+                        <h3 id="smoking-vaping-title">Smoking</h3>
+                        <p id="smoking-vaping-text"></p>
+                    </div>
 
-	<section id="comparison-tool">
-		<main class="comparison-tool">
-			<section class="toggle-section">
-				<div class="switch-container">
-					<h3 id="switch-vaping-title">Toggle to Compare</h3>
-					<label class="switch">
-						<input type="checkbox" id="comparison-toggle" onchange="updateComparison(this.checked)">
-						<span class="slider round"></span>
-					</label>
-				</div>
-				<div class="comparison-box" id="smoking-vaping-box">
-					<i id="smoking-vaping-icon" class="fas fa-smoking"></i>
-					<h3 id="smoking-vaping-title">Smoking</h3>
-					<p id="smoking-vaping-text">Smoking involves burning tobacco, which releases nicotine rapidly into the bloodstream, making it highly addictive and exposing users to over 7,000 chemicals, including at least 70 known carcinogens.</p>
-				</div>
+                    <div class="comparison-box" id="chemical-exposure-box">
+                        <i id="chemical-exposure-icon" class="fas fa-flask"></i>
+                        <h3 id="chemical-exposure-title">Chemical Exposure</h3>
+                        <p id="chemical-exposure-text">Contains over 7,000 chemicals, with 70 known carcinogens (CDC, American Lung Association).</p>
+                    </div>
 
-				<div class="comparison-box" id="chemical-exposure-box">
-					<i id="chemical-exposure-icon" class="fas fa-flask"></i>
-					<h3 id="chemical-exposure-title">Chemical Exposure</h3>
-					<p id="chemical-exposure-text">Traditional cigarettes contain over 7,000 chemicals, many of which are toxic and include over 70 known carcinogens such as carbon monoxide, tar, formaldehyde, cyanide, and others (CDC, American Lung Association).</p>
-				</div>
+                    <div class="comparison-box" id="health-risks-box">
+                        <i id="health-risks-icon" class="fas fa-lungs"></i>
+                        <h3 id="health-risks-title">Health Risks</h3>
+                        <p id="health-risks-text">Causes lung cancer, COPD, heart disease (American Cancer Society).</p>
+                    </div>
 
-				<div class="comparison-box" id="health-risks-box">
-					<i id="health-risks-icon" class="fas fa-lungs"></i>
-					<h3 id="health-risks-title">Health Risks</h3>
-					<p id="health-risks-text">Directly linked to numerous health issues including lung cancer, COPD, and heart disease. Smoking is responsible for nearly one in five deaths in the United States annually (American Cancer Society).</p>
-				</div>
-
-				<div class="comparison-box" id="addiction-potential-box">
-					<i id="addiction-potential-icon" class="fas fa-brain"></i>
-					<h3 id="addiction-potential-title">Addiction Potential</h3>
-					<p id="addiction-potential-text">Highly addictive due to the rapid absorption of nicotine into the bloodstream, enhanced by additional chemicals in cigarettes that increase nicotine's addictive effects (NIH).</p>
-				</div>
-			</section>
-		</main>
-	</section>
+                    <div class="comparison-box" id="addiction-potential-box">
+                        <i id="addiction-potential-icon" class="fas fa-brain"></i>
+                        <h3 id="addiction-potential-title">Addiction Potential</h3>
+                        <p id="addiction-potential-text">High addiction due to nicotine and rapid delivery to the brain (NIH).</p>
+                    </div>
+                </section>
+            </main>
+        </section>
 		
 		<section id="facts">
 			
